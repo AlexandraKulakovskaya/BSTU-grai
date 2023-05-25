@@ -58,71 +58,34 @@
                     <a href="cart.html">Корзина</a>
                 </li>
             </ul>
+            <div class="burger-menu">
+                <a href="#">
+                    <i class="fas fa-map-marker fa-lg mobile-map"></i>
+                </a>
+                <input type="checkbox" id="checkbox" class="burger-checkbox">
+                <label for="checkbox" class="burger-btn-container">
+                    <i class="fas fa-bars burger-btn fa-lg"></i>
+                </label>
+                <div class="burger-container">
+                    <ul class="burger-list">
+                        <li class="burger-item">
+                            <a href="catalog.html" class="burger-link">Каталог</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="contacts.html" class="burger-link">Контакты</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="cart.html" class="burger-link">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="menu-category catalog">
             <h1>Каталог</h1>
-            <ul class="flex-grid categories">
-                <li>
-                    <a href="catalog.html?category=1">
-                        <figure class="categories-hover">
-                            <img src="assets/category1.jpg" alt="">
-                            <figcaption class="category-description">
-                                <h3 class="category-name">Подсвечники</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalog.html?category=2">
-                        <figure class="categories-hover">
-                            <img src="assets/category2.jpg" alt="">
-                            <figcaption class="category-description">
-                                <h3 class="category-name">Магниты</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalog.html?category=3">
-                        <figure class="categories-hover">
-                            <img src="assets/category6.jpg" alt="">
-                            <figcaption class="category-description">
-                                <h3 class="category-name">Панно</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalog.html?category=4">
-                        <figure class="categories-hover">
-                            <img src="assets/category4.jpg" alt="">
-                            <figcaption class="category-description">
-                                <h3 class="category-name">Шары</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalog.html?category=5">
-                        <figure class="categories-hover">
-                            <img src="assets/category5.jpg" alt="">
-                            <figcaption class="category-description">
-                                <h3 class="category-name">Специальные заказы</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
         </section>
-
-        <!-- <div class="catalog-wrapper">
-            <ul id="menu-list" class="catalog-container">
-            </ul>
-        </div> -->
-        
-        <!-- <button class="btn-ellipse-1 btn-transform">Еще</button> -->
 
         <ul id="menu-list" class="catalog-container">
             <li class="cell">
@@ -132,7 +95,6 @@
                         <h3>Зимний Дом</h3>
                         <hr>
                         <p class="catalog-item-category">Подсвечники</p>
-                        <!-- <p _tmplitem="1"  class="catalog-item-description">Изделие из гипса</p> -->
                         <p class="catalog-item-price">10 BYN</p>
                         <button class="btn-cart cart-add btn-cart-transform" data-id="1" data-price="10"
                             data-title="Зимний Дом"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
@@ -147,7 +109,6 @@
                         <h3>Библиотека</h3>
                         <hr>
                         <p class="catalog-item-category">Панно</p>
-                        <!-- <p _tmplitem="2"  class="catalog-item-description">Арт.Пан-1</p> -->
                         <p class="catalog-item-price">5 BYN</p>
                         <button class="btn-cart cart-add btn-cart-transform" data-id="2" data-price="5"
                             data-title="Библиотека"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
