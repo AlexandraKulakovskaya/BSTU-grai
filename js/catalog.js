@@ -15,13 +15,6 @@ $(function () {
 
     if ($(window).width() <= 768)
         CheckHeaderAnim();
-
-
-    LoadItems();
-
-    $(".btn-ellipse-1").bind('click', function () {
-        LoadItems();
-    });
     CheckWindowWidth();
 });
 

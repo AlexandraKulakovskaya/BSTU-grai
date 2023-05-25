@@ -73,7 +73,7 @@ var Cart = {
 
                 totalItems += '<tr>';
                 totalItems += '<th scope="row"><figure class="shopping-list-wrapper"><a href="catalog-item.html?item=' +
-                    val + '"><img src="img/catalog/catalog' + val + '.jpg"></a><figcaption><p>' +
+                    val + '"><img src="assets/catalog/catalog' + val + '.jpg"></a><figcaption><p>' +
                     cartData[val][0] + '</p></figcaption></figure></th>';
 
                 totalItems += '<td class="align-middle">' + cartData[val][1] + ' BYN</td>';
