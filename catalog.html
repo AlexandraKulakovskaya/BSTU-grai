@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог - Грай</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <script src="https://kit.fontawesome.com/95073bc5fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/catalog.js"></script>
+
+<body id="upper">
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" title="grai" alt="grai" height="90">
+            </a>
+        </div>
+        <nav id="navigation">
+            <ul class="socialbar">
+                <li>
+                    <a href="#">Карьера</a>
+                </li>|
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menubar">
+                <li>
+                    <a class="active-menubar" href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="cart.html">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-category catalog">
+            <h1>Каталог</h1>
+            <ul class="flex-grid categories">
+                <li>
+                    <a href="catalog.html?category=1">
+                        <figure class="categories-hover">
+                            <img src="assets/category1.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Подсвечники</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=2">
+                        <figure class="categories-hover">
+                            <img src="assets/category2.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Магниты</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=3">
+                        <figure class="categories-hover">
+                            <img src="assets/category6.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Панно</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=4">
+                        <figure class="categories-hover">
+                            <img src="assets/category4.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Шары</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=5">
+                        <figure class="categories-hover">
+                            <img src="assets/category5.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Специальные заказы</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- <div class="catalog-wrapper">
+            <ul id="menu-list" class="catalog-container">
+            </ul>
+        </div> -->
+        
+        <!-- <button class="btn-ellipse-1 btn-transform">Еще</button> -->
+
+        <ul id="menu-list" class="catalog-container">
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog1.jpg" alt="Зимний Дом"
+                        title="Зимний Дом">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Зимний Дом</h3>
+                        <hr>
+                        <p class="catalog-item-category">Подсвечники</p>
+                        <!-- <p _tmplitem="1"  class="catalog-item-description">Изделие из гипса</p> -->
+                        <p class="catalog-item-price">10 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="1" data-price="10"
+                            data-title="Зимний Дом"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell cell-2x1">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog2.jpg" alt="Библиотека"
+                        title="Библиотека">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Библиотека</h3>
+                        <hr>
+                        <p class="catalog-item-category">Панно</p>
+                        <!-- <p _tmplitem="2"  class="catalog-item-description">Арт.Пан-1</p> -->
+                        <p class="catalog-item-price">5 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="2" data-price="5"
+                            data-title="Библиотека"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog3.jpg" alt="Библиотека-2"
+                        title="Библиотека-2">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Библиотека-2</h3>
+                        <hr>
+                        <p class="catalog-item-category">Панно</p>
+                        <p class="catalog-item-price">12.1 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="3" data-price="12.1"
+                            data-title="Библиотека-2"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog4.jpg" alt="Ангел"
+                        title="Ангел">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Ангел</h3>
+                        <hr>
+                        <p class="catalog-item-category">Шары</p>
+                        <p class="catalog-item-price">6 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="4" data-price="6"
+                            data-title="Ангел"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog5.jpg" alt="Каляды"
+                        title="Каляды">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Каляды</h3>
+                        <hr>
+                        <p class="catalog-item-category">Подсвечники</p>
+                        <p class="catalog-item-price">5.99 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="5" data-price="5.99"
+                            data-title="Каляды"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell cell-2x1">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog6.jpg" alt="Доктор Лодэ"
+                        title="Доктор Лодэ">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Доктор Лодэ</h3>
+                        <hr>
+                        <p class="catalog-item-category">Специальные заказы</p>
+                        <p class="catalog-item-price">15 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="6" data-price="15"
+                            data-title="Доктор Лодэ"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog7.jpg"
+                        alt="Кафедральный собор" title="Кафедральный собор">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Кафедральный собор</h3>
+                        <hr>
+                        <p class="catalog-item-category">Магниты</p>
+                        <p class="catalog-item-price">7.99 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="7" data-price="7.99"
+                            data-title="Кафедральный собор"> <i class="fas fa-cart-arrow-down fa-lg"
+                                aria-hidden="true"></i> </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell cell-2x1">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog8.jpg" alt="Богатство"
+                        title="Богатство">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Богатство</h3>
+                        <hr>
+                        <p class="catalog-item-category">Магниты</p>
+                        <p class="catalog-item-price">3.99 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="8" data-price="3.99"
+                            data-title="Богатство"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog9.jpg" alt="Ангел на луне"
+                        title="Ангел на луне">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Ангел на луне</h3>
+                        <hr>
+                        <p class="catalog-item-category">Шары</p>
+                        <p class="catalog-item-price">6 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="9" data-price="6"
+                            data-title="Ангел на луне"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog10.jpg" alt="Камин"
+                        title="Камин">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Камин</h3>
+                        <hr>
+                        <p class="catalog-item-category">Подсвечники</p>
+                        <p class="catalog-item-price">7.99 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="10" data-price="7.99"
+                            data-title="Камин"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog11.jpg" alt="Альфред А"
+                        title="Альфред А">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Альфред А</h3>
+                        <hr>
+                        <p class="catalog-item-category">Специальные заказы</p>
+                        <p class="catalog-item-price">15 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="11" data-price="15"
+                            data-title="Альфред А"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="cell cell-2x1">
+                <figure class="catalog-teaser catalog-hover"> <img src="assets/catalog/catalog12.jpg" alt="Красный костел"
+                        title="Красный костел">
+                    <figcaption class="catalog-teaser-text">
+                        <h3>Красный костел</h3>
+                        <hr>
+                        <p class="catalog-item-category">Подсвечники</p>
+                        <p class="catalog-item-price">5.4 BYN</p>
+                        <button class="btn-cart cart-add btn-cart-transform" data-id="12" data-price="5.4"
+                            data-title="Красный костел"> <i class="fas fa-cart-arrow-down fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+    </main>
+    <footer class="main-footer">
+        <figure id="logo-inverse">
+            <a href="index.html">
+                <img src="assets/logo-inverse.png" title="grai" alt="grai" height="90">
+            </a>
+        </figure>
+
+        <ul class="footer-info">
+            <li>
+                <span>Время работы:</span>
+                <ul>
+                    <li>07:00 - 22:00</li>
+                    <li>Ежедневно</li>
+                    <li>Сандень - первый</li>
+                    <li>день месяца</li>
+                </ul>
+            </li>
+            <li>
+                <span>Мы в социальных сетях:</span>
+                <ul class="footer-socialbar">
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </footer>
+    <footer class="sub-footer">
+        <ul class="add-info">
+            <li>
+                <a href="#">Карьера</a>
+            </li>
+            <li>
+                <a href="#">Юридические данные</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexandraKulakovskaya/BSTU-teatrkukol">Github</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.figma.com/file/7Ix1tMZQd5MIGX62oS9WpQ/Untitled?type=design&node-id=1%3A2&t=Gs41c0njJQnFpW59-1">Figma</a>
+            </li>
+        </ul>
+        <span class="copyright">2023 @ Кулаковская А.В., ЭМ-3</span>
+    </footer>
+    <div id="arrow-up">
+        <a href="#upper">
+            <i class="fas fa-caret-up fa-2x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+
+</html>

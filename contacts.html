@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Контакты - Пекарь-Бекарь</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <script src="https://kit.fontawesome.com/95073bc5fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body id="upper">
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" title="grai" alt="grai" height="90">
+            </a>
+        </div>
+        <nav id="navigation">
+            <ul class="socialbar">
+                <li>
+                    <a href="#">Карьера</a>
+                </li>|
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menubar">
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="cart.html">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <figure class="page-banner-small">
+                <img src="assets/contacts-banner.jpg" alt="Contacts">
+                <figcaption class="banner-description">
+                    <h1>Вопросы?</h1>
+                    <p>Мы ответим и поможем разобраться с возникшей проблемой</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="contacts-title">Контакты</div>
+            <div class="contacts-container">
+                <div>
+                    <p class="contacts-header">Если у вас есть какие-либо вопросы или предложения, пожалуйста, заполните
+                        информацию в полях ниже:</p>
+
+                    <form id="contact-form" role='form' action="" method="POST">
+                        <div class="col-md">
+                            <div class="form-group">                               
+                                <input class="form-control" type="text" name="reply-name" id="reply-name" required />
+                                <label class="control-label" for="reply-name">Представьтесь, пожалуйста.</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="email" id="email" required />
+                                <label class="control-label" for="email">На какой E-Mail Вам ответить?</label>
+                         
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="phone" id="phone" />
+                                <label class="control-label" for="phone">Если что, мы Вам перезвоним!</label>
+                           
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label class="control-label" for="message">Ваше сообщение:</label>
+                                <textarea rows="10" class="form-control" name="message" id="message" required></textarea>
+                            </div>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <button class="btn-rect1" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <div>
+                    <svg class="svg-border">
+                        <polyline points="5,234 5,254 236,254 271,288 307,254 537,254 537,234"
+                            fill="rgba(255,255,255,1)" stroke="#1DB954" stroke-width="10" />
+                    </svg>
+                    <div class="card-container">
+                        <h3>Наш офис</h3>
+                        <p>7:00 - 22:00 ежедневно</p>
+                        <address>Ул. Немига, д.36, офис 3</address>
+                        <address>+375 44
+                            <strong>7777777</strong>
+                        </address>
+                    </div>
+                    <iframe class="yandex-map"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A9667697ffc02fc0b189af7f7a5ba9d20ebc1c22bb3d9bff330f214bfef3b9909&amp;source=constructor"
+                        width="540" height="340" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="contacts-success-wrapper" class="wrapper-message" style="display:none">
+        <div class="container-message">
+            <p>Сообщение отправлено!</p>
+        </div>
+    </div>
+    <div id="contacts-error-wrapper" class="wrapper-message" style="display:none">
+        <div class="container-message">
+            <p>Не удалось отправить сообщение!</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <figure id="logo-inverse">
+            <a href="index.html">
+                <img src="assets/logo-inverse.png" title="grai" alt="grai" height="90">
+            </a>
+        </figure>
+
+        <ul class="footer-info">
+            <li>
+                <span>Время работы:</span>
+                <ul>
+                    <li>07:00 - 22:00</li>
+                    <li>Ежедневно</li>
+                    <li>Сандень - первый</li>
+                    <li>день месяца</li>
+                </ul>
+            </li>
+            <li>
+                <span>Мы в социальных сетях:</span>
+                <ul class="footer-socialbar">
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </footer>
+    <footer class="sub-footer">
+        <ul class="add-info">
+            <li>
+                <a href="#">Карьера</a>
+            </li>
+            <li>
+                <a href="#">Юридические данные</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexandraKulakovskaya/BSTU-teatrkukol">Github</a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/file/7Ix1tMZQd5MIGX62oS9WpQ/Untitled?type=design&node-id=1%3A2&t=Gs41c0njJQnFpW59-1">Figma</a>
+            </li>
+        </ul>
+        <span class="copyright">2023 @ Кулаковская А.В., ЭМ-3</span>
+    </footer>
+    <div id="arrow-up">
+        <a href="#upper">
+            <i class="fas fa-caret-up fa-2x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+
+</html>
