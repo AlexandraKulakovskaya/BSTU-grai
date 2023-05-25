@@ -15,12 +15,14 @@ $(function () {
 
     if ($(window).width() <= 768)
         CheckHeaderAnim();
-
-
-    LoadItems();
-
-    $(".btn-ellipse-1").bind('click', function () {
-        LoadItems();
-    });
     CheckWindowWidth();
 });
+
+$(function () {
+    itemBox = d.querySelectorAll('.cart-add')
+    for (var i = 0; i < itemBox.length; i++) {
+        addEvent(itemBox[i], 'click', Cart.addToCart);
+    }
+    CheckWindowWidth();
+
+})
