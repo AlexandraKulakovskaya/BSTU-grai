@@ -1,12 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
+    <title>Корзина - Грай</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <script src="https://kit.fontawesome.com/95073bc5fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
 </head>
-<body>
-    
+
+<body id="upper">
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" title="grai" alt="grai" height="90">
+            </a>
+        </div>
+        <nav id="navigation">
+            <ul class="socialbar">
+                <li>
+                    <a href="#">Карьера</a>
+                </li>|
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menubar">
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="cart.html">Корзина</a>
+                </li>
+            </ul>
+
+            <div class="burger-menu">
+                <a href="#">
+                    <i class="fas fa-map-marker fa-lg mobile-map"></i>
+                </a>
+                <input type="checkbox" id="checkbox" class="burger-checkbox">
+                <label for="checkbox" class="burger-btn-container">
+                    <i class="fas fa-bars burger-btn fa-lg"></i>
+                </label>
+                <div class="burger-container">
+                    <ul class="burger-list">
+                        <li class="burger-item">
+                            <a href="catalog.html" class="burger-link">Каталог</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="contacts.html" class="burger-link">Контакты</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="cart.html" class="burger-link">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <figure class="page-banner-small">
+                <img src="assets/banner.jpg" alt="Services">
+                <figcaption class="banner-description">
+                    <h1>Корзина</h1>
+                    <p>Ваши покупки уже здесь!</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="cart-wrapper">
+            <div id="cart-content"></div>
+            <button id="checkout" class="btn-ellipse-2">Оформить заказ</button>
+            <button id="clearcart" class="btn-ellipse-2">Очистить корзину</button>
+        </section>
+    </main>
+    <div class="order-wrapper" style="display:none;">
+        <div class="order-container">
+            <p class="order-header">Оформление заказа</p>
+
+            <form id="order-form" role='form' action="" method="POST" autocomplete="off">
+                <div class="col-md">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="reply-name" id="reply-name" required/>
+                        <label for="reply-name" class="">Ваше имя</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="phone" id="phone" required/>
+                        <label for="phone" class="">Телефон</label>
+                    </div>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <button class="btn-rect1" type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+    <div id="order-success-wrapper" class="wrapper-message" style="display:none">
+        <div class="container-message">
+            <p>Заказ отправлен! Ожидайте звонка оператора</p>
+        </div>
+    </div>
+    <div id="order-error-wrapper" class="wrapper-message" style="display:none">
+        <div class="container-message">
+            <p>Не удалось отправить заказ!</p>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <figure id="logo-inverse">
+            <a href="index.html">
+                <img src="assets/logo-inverse.png" title="grai" alt="grai" height="90">
+            </a>
+        </figure>
+
+        <ul class="footer-info">
+            <li>
+                <span>Время работы:</span>
+                <ul>
+                    <li>07:00 - 22:00</li>
+                    <li>Ежедневно</li>
+                    <li>Сандень - первый</li>
+                    <li>день месяца</li>
+                </ul>
+            </li>
+            <li>
+                <span>Мы в социальных сетях:</span>
+                <ul class="footer-socialbar">
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </footer>
+    <footer class="sub-footer">
+        <ul class="add-info">
+            <li>
+                <a href="#">Карьера</a>
+            </li>
+            <li>
+                <a href="#">Юридические данные</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexandraKulakovskaya/BSTU-teatrkukol">Github</a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/file/7Ix1tMZQd5MIGX62oS9WpQ/Untitled?type=design&node-id=1%3A2&t=Gs41c0njJQnFpW59-1">Figma</a>
+            </li>
+        </ul>
+        <span class="copyright">2023 @ Кулаковская А.В., ЭМ-3</span>
+    </footer>
+    <div id="arrow-up">
+        <a href="#upper">
+            <i class="fas fa-caret-up fa-2x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </div>
 </body>
+
 </html>

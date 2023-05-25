@@ -24,3 +24,12 @@ $(function () {
     });
     CheckWindowWidth();
 });
+
+$(function () {
+    itemBox = d.querySelectorAll('.cart-add')
+    for (var i = 0; i < itemBox.length; i++) {
+        addEvent(itemBox[i], 'click', Cart.addToCart);
+    }
+    CheckWindowWidth();
+
+})
