@@ -361,4 +361,4 @@ function buttonClick (event) {
   };
 };
 
-document.querySelector('.photo__buttons').addEventListener('click', buttonClick);
+$(document).querySelector('.photo__buttons').addEventListener('click', buttonClick);
