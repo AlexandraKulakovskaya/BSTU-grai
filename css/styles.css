@@ -539,6 +539,52 @@ section {
 	bottom: 0;
 	z-index: 50;
 }
+.photo {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #007000;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+  .button {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.button_color {
+  background-color: #ff0ff0;
+}
+
+.photo__image {
+  display: flex;
+  justify-content: space-between;
+  
+  img {
+    height: 200px;
+  }
+}
+
 
 
 /* ABOUT */
