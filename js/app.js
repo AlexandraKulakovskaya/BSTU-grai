@@ -32,7 +32,7 @@ function changeImage (event) {
   var season = event.target.dataset.season;
   var seasonImages = document.querySelector('.photo__image').children;
   Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
-  // Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
+ Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
   
   var buttons = document.querySelector('.photo__buttons').children;
   Array.from(buttons).forEach(button => {
