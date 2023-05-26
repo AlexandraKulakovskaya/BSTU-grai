@@ -223,6 +223,7 @@ $(document).on('submit', '#order-form', function (e) {
     })
 });
 
+
 // HEADER ANIMATION
 $(window).scroll(function () {
 
@@ -311,3 +312,4 @@ function CheckHeaderAnim() {
         'margin-top': '10'
     }, 'fast');
 }
+
