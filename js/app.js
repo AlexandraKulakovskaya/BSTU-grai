@@ -42,13 +42,6 @@ function changeImage (event) {
       button.classList.remove('button_color');
     };
   });
-  const element = document.querySelectorall('.photo__image .children');
-  for (i=0, i<element.length, i++) {
-    element[i].onclick - funcShow;
-  };
-  function funcShow() {
-  this.classlist.toggle('children-show');
-};
 
 function buttonClick (event) {
   if (event.target.classList.contains('button')) {
