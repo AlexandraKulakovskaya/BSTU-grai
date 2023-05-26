@@ -29,12 +29,12 @@ var seasons = {
 
 
 function changeImage (event) {
-  var season = event.target.dataset.season;
-  var seasonImages = document.querySelector('.photo__image').children;
+  const season = event.target.dataset.season;
+  const seasonImages = document.querySelector('.photo__image').children;
   Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
  Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
   
-  var buttons = document.querySelector('.photo__buttons').children;
+  const buttons = document.querySelector('.photo__buttons').children;
   Array.from(buttons).forEach(button => {
     if (button.dataset.season == season) {
       button.classList.add('button_color');
@@ -42,7 +42,12 @@ function changeImage (event) {
       button.classList.remove('button_color');
     };
   });
-  
+  const element = document.querySelectorall('.photo__image .children');
+  for (i=0, i<element.length, i++) {
+    element[i].onclick - funcShow;
+  };
+  function funcShow() {
+  this.classlist.toggle('children-show');
 };
 
 function buttonClick (event) {
