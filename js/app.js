@@ -1,6 +1,6 @@
 $.getScript('js/url.min.js');
 
-var nav, logo, logoHeight, logoImg, logoImgHeight;
+var nav, logo, logoHeight, logoImg, logoImgHeight, seasons ;
 var isReady = false;
 var d = document;
 
