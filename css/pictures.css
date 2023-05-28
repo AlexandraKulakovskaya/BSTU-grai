@@ -1,0 +1,57 @@
+.photo {
+  /* width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center; */
+  width: auto;
+  height: 50vh;
+  flex-basis: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.photo__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  align-items: center;
+  height: 10vh;
+  margin-top: -10vh;
+
+}
+
+.photo__buttons .photo__button {
+  border-radius: 20px;
+  border-width: 0;
+  font-size: 16px;
+  padding: 15px 60px;
+  font-family: "LatoLight";
+  text-transform: uppercase;
+}
+
+.photo__buttons .photo__button:hover {
+  cursor: pointer;
+}
+
+.button_color {
+  background-color: #1DB954;
+  color: #ffffff;
+}
+
+.photo__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo__image img {
+  display: block;
+  width: 34%;
+  height: 50vh;
+  object-fit: cover;
+}
