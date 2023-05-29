@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная - Грай</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pictures.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pictures.js" defer></script>
+</head>
+
+<body id="upper">
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" title="grai" alt="grai" height="90">
+            </a>
+        </div>
+        <nav id="navigation">
+            <ul class="socialbar">
+                <li>
+                    <a href="#">Карьера</a>
+                </li>|
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menubar">
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="cart.html">Корзина</a>
+                </li>
+            </ul>
+            <div class="burger-menu">
+                <a href="#">
+                    <i class="fas fa-map-marker fa-lg mobile-map"></i>
+                </a>
+                <input type="checkbox" id="checkbox" class="burger-checkbox">
+                <label for="checkbox" class="burger-btn-container">
+                    <i class="fas fa-bars burger-btn fa-lg"></i>
+                </label>
+                <div class="burger-container">
+                    <ul class="burger-list">
+                        <li class="burger-item">
+                            <a href="catalog.html" class="burger-link">Каталог</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="contacts.html" class="burger-link">Контакты</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="cart.html" class="burger-link">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider-container">
+            <div class="slider">
+                <input type="radio" name="slider1" id="slider1-1" checked="checked">
+                <label for="slider1-1"></label>
+                <div>
+                    <img id="img1" src="https://cs8.pikabu.ru/post_img/big/2017/12/20/7/1513767713158227847.jpg" alt="Banner image2">
+                </div>
+                <label for="slider1-2"></label>
+
+                <input type="radio" name="slider1" id="slider1-2">
+                <label for="slider1-2"></label>
+                <div>
+                    <img id="img2" src="https://wpapers.ru/wallpapers/Holidays/New-Year/14587/PREV_%D0%A1%D0%BD%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D0%BA.jpg" alt="Banner image2">
+                </div>
+                <label for="slider1-3"></label>
+
+                <input type="radio" name="slider1" id="slider1-3">
+                <label for="slider1-3"></label>
+                <div>
+                    <img id="img3" src="https://img5.goodfon.ru/wallpaper/nbig/4/e2/novyi-god-prazdnik-zima-rozhdestvo-novogodnie-igrushki-sne-1.jpg" alt="Banner image3">
+                </div>
+                <label for="slider1-1"></label>
+            </div>
+            <div class="photo__buttons">
+                <button class="photo__button button_color" data-season="snowmen">СНЕГОВИКИ</button>
+                <button class="photo__button" data-season="balls">Шары</button>
+                <button class="photo__button" data-season="stars">Звезды</button>
+            </div>
+        </section>
+
+
+        <section>
+            <ul class="flex-grid col3">
+                <li>
+                    <a href="catalog.html">
+                        <figure class="info-img-teaser">
+                            <img src="assets/teaser1.jpg" alt="">
+                            <figcaption class="teaser-text">
+                                <h3>Новые игрушки</h3>
+                                <hr>
+                                <span>Мы всегда думаем о новых способах удовлетворить Вашу тягу к прекрасному.</span>
+                                <br>
+                                <span>СМОТРЕТЬ НОВЫЕ ПОСУТПЛЕНИЯ</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html">
+                        <figure class="info-img-teaser">
+                            <img src="assets/teaser2.jpg" alt="">
+                            <figcaption class="teaser-text">
+                                <h3>Сувенирная продукция</h3>
+                                <hr>
+                                <span>Постоянные посетители знают, что стоит купить!</span>
+                                <br>
+                                <span>В КАТАЛОГ</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html">
+                        <figure class="info-img-teaser">
+                            <img src="assets/teaser3.jpg" alt="">
+                            <figcaption class="teaser-text">
+                                <h3>Корпоративным клиентам</h3>
+                                <hr>
+                                <span>Работы на заказ</span>
+                                <br>
+                                <span>СМОТРЕТЬ СПЕЦИАЛЬНЫЕ ЗАКАЗЫ</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="menu-category">
+            <h1>Каталог</h1>
+            <p class="description"></p>
+            <ul class="flex-grid categories">
+                <li>
+                    <a href="catalog.html?category=1">
+                        <figure class="categories-hover">
+                            <img src="assets/category1.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Подсвечники</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=2">
+                        <figure class="categories-hover">
+                            <img src="assets/category2.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Магниты</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=3">
+                        <figure class="categories-hover">
+                            <img src="assets/category3.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Панно</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=4">
+                        <figure class="categories-hover">
+                            <img src="assets/category4.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Шары</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="catalog.html?category=5">
+                        <figure class="categories-hover">
+                            <img src="assets/category5.jpg" alt="">
+                            <figcaption class="category-description">
+                                <h3 class="category-name">Специальные заказы</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul class="flex-grid col3">
+                <li>
+                    <a href="cart.html">
+                        <figure class="info-img-teaser">
+                            <img src="assets/сart-icon.jpg" alt="">
+                            <figcaption class="teaser-text">
+                                <h3>КОРЗИНА</h3>
+                                <hr>
+                                <span>История нашего стремления сделать этот мир вкуснее, ярче и чувственнее.</span>
+                                <br>
+                                <span>ЧИТАТЬ ДАЛЕЕ</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <figure class="info-img-teaser">
+                        <img src="assets/map.jpg" alt="">
+                        <figcaption class="teaser-text teaser-map-text">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <span>ближайшие пекарни</span>
+                            <h3>ОКОЛО ВАС</h3>
+                            <a href="#" class="btn-map">КАРТА</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <figure class="info-img-teaser">
+                            <img src="assets/contacts.jpg" alt="">
+                            <figcaption class="teaser-text">
+                                <h3>КОНТАКТЫ</h3>
+                                <hr>
+                                <span>Если у Вас есть какие-либо вопросы или предложения, напишите нам.</span>
+                                <br>
+                                <span>НАПИСАТЬ</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <figure id="logo-inverse">
+            <a href="index.html">
+                <img src="assets/logo-inverse.png" title="grai" alt="grai" height="90">
+            </a>
+        </figure>
+
+        <ul class="footer-info">
+            <li>
+                <span>Время работы:</span>
+                <ul>
+                    <li>07:00 - 22:00</li>
+                    <li>Ежедневно</li>
+                    <li>Сандень - первый</li>
+                    <li>день месяца</li>
+                </ul>
+            </li>
+            <li>
+                <span>Мы в социальных сетях:</span>
+                <ul class="footer-socialbar">
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </footer>
+    <footer class="sub-footer">
+        <ul class="add-info">
+            <li>
+                <a href="#">Карьера</a>
+            </li>
+            <li>
+                <a href="#">Юридические данные</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexandraKulakovskaya/BSTU-teatrkukol">Github</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.figma.com/file/7Ix1tMZQd5MIGX62oS9WpQ/Untitled?type=design&node-id=1%3A2&t=Gs41c0njJQnFpW59-1">Figma</a>
+            </li>
+        </ul>
+        <span class="copyright">2023 @ Кулаковская А.В., ЭМ-3</span>
+    </footer>
+    <div id="arrow-up">
+        <a href="#upper">
+            <i class="fas fa-caret-up fa-2x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+
+</html>
