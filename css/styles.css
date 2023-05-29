@@ -430,11 +430,11 @@ section {
 /* SLIDER */
 
 .slider-container {
+	background-color: white;
 	width: auto;
 	height: 100vh;
 	flex-basis: 100%;
 	overflow: hidden;
-	background-color: #000;
 }
 
 .slider {
@@ -539,6 +539,38 @@ section {
 	bottom: 0;
 	z-index: 50;
 }
+
+.photo__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1vw;
+	align-items: center;
+	height: 70px;
+	background-color: white;
+	margin-top: -70px;
+	
+	z-index: 1000;
+  }
+  
+  .photo__buttons .photo__button {
+	border-radius: 20px;
+	border-width: 0;
+	font-size: 16px;
+	padding: 15px 60px;
+	font-family: "LatoLight";
+	text-transform: uppercase;
+	
+	z-index: 1000;
+  }
+  
+  .photo__buttons .photo__button:hover {
+	cursor: pointer;
+  }
+  
+  .button_color {
+	background-color: #1DB954;
+	color: #ffffff;
+  }
 
 /* ABOUT */
 

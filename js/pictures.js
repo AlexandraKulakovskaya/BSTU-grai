@@ -19,8 +19,10 @@ const seasons = {
 
 function changeImage (event) {
   const season = event.target.dataset.season;
-  const seasonImages = document.querySelector('.photo__image').children;
-  Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
+   document.querySelector('#img1').src = seasons[season][0]
+   document.querySelector('#img2').src = seasons[season][1]
+   document.querySelector('#img3').src = seasons[season][2]
+  //Array.from(seasonImages).forEach((image, index) => image.src = seasons[season][index]);
   // Array.from(seasonImages).forEach((image, index) => image.src = './assets/seasons/' + season + '/' + (index + 1) + '.jpg');
   
   const buttons = document.querySelector('.photo__buttons').children;
